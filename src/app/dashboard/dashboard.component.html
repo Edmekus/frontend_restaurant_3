@@ -1,0 +1,38 @@
+<mat-card>
+    <b><span>Tableau de bord</span></b>
+</mat-card>
+
+<div class="row">
+
+    <div class="column">
+        <div class="card">
+            <div class="container">
+                <h2 class="title">Produit Totale</h2>
+                <h2 class="title">{{data?.product || 'Données non disponibles'}}</h2>
+                <p><button class="button" [routerLink]="['/cafe/product']">Voir Produits</button></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <div class="container">
+                <h2 class="title">Facture Totale</h2>
+                <h2 class="title">{{data?.bill || 'Données non disponibles'}}</h2>
+                <p><button class="button" [routerLink]="['/cafe/bill']">Voir Facture</button></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="column">
+        <div class="card">
+            <div class="container">
+                <h2 class="title">Catégorie Totale</h2>
+                <h2 class="title">{{data?.category || 'Données non disponibles'}}</h2>
+                <p><button class="button" [routerLink]="['/cafe/category']">Voir Catégorie</button></p>
+            </div>
+        </div>
+    </div>
+
+</div>
