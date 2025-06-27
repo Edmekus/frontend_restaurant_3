@@ -12,9 +12,9 @@ dist/
 .env
 *.log
 
-src/
-*.ts
-*.js
+#src/
+#*.ts
+#*.js
 
 # compiled output
 /dist
