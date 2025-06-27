@@ -1,0 +1,24 @@
+<mat-toolbar class="custom-toolbar" color="accent"> <!-- Change color to green -->
+    <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-between center"> <!-- Align content -->
+      <span>Confirmation</span>
+      <button class="mat-dialog-close" mat-icon-button mat-dialog-close>
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  
+  <mat-dialog-content class="mat-typography">
+    <h2>Êtes-vous sûr de {{ details.message }} ?</h2>
+  </mat-dialog-content>
+  
+  <mat-dialog-actions align="end">
+    <button mat-raised-button color="primary" (click)="handleChangeAction()">
+      <mat-icon>check_circle</mat-icon> Oui
+    </button>
+  
+    <button mat-raised-button color="warn" mat-dialog-close>
+      <mat-icon>cancel</mat-icon> Non
+    </button>
+  </mat-dialog-actions>
+
+  

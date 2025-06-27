@@ -1,0 +1,79 @@
+mat-dialog-content {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+mat-dialog-content form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Espace uniforme entre les éléments */
+}
+
+mat-dialog-actions {
+  margin-top: auto;
+}
+
+.mat-toolbar {
+  margin: 0;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #679436; 
+  color: white; 
+  height: 56px; 
+  font-size: 1.2rem; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.mat-form-field {
+  padding: 5px;
+  margin-bottom: 16px; /* Ajoute un espace entre les champs */
+  background-color: #fff; /* Fond blanc */
+  border-radius: 4px; /* Bords arrondis */
+  border: 1px solid #ccc; /* Bordure grise */
+}
+
+.mat-form-field mat-label {
+  color: #000; /* Couleur noire pour le label */
+  font-weight: bold; /* Gras pour le label */
+}
+
+.mat-form-field mat-label.mat-focused {
+  color: #679436; /* Couleur du label quand le champ est focalisé */
+}
+
+.mat-error {
+  color: red; /* Couleur rouge pour les erreurs */
+  font-size: 0.875rem; /* Taille des erreurs */
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.mat-form-field.mat-select-field {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.mat-select {
+  background-color: white;
+
+}
+
+.mat-option {
+  color: black; /* Assure que le texte des options est bien visible */
+}
+
+.mat-select-arrow {
+  color: black;
+}
+
+.mat-select-panel {
+  max-height: 300px !important; /* Ajuste la taille maximale */
+  overflow-y: auto !important;   /* Ajoute une barre de défilement si nécessaire */
+  background-color: #f0f0f0 !important; /* Fond gris clair pour voir les options */
+  color: black !important; /* Couleur du texte pour les options */
+}
